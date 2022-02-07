@@ -1,6 +1,6 @@
 with source as (
 
-    select * from {{ source('stackoverflow', 'badges') }}
+    select * from {{ source('stackoverflow', 'post_answers') }}
 
  )
 ,
@@ -8,7 +8,7 @@ with source as (
 transformed as (
 
     select
-        *         
+        *          
     from source   
 )
 
